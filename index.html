@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Click Coletas | Ponto de Envio e Logística em Vicente Pires</title>
+  <meta name="description" content="Click Coletas em Vicente Pires, Brasília/DF. Ponto de apoio para recebimento, armazenagem, separação e envio de encomendas para e-commerce e marketplaces." />
+  <meta name="keywords" content="Click Coletas, ponto de coleta Vicente Pires, logística Brasília, envio de encomendas, armazenamento, e-commerce, Mercado Livre, Shopee, Amazon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --yellow:#f4be16; --dark:#07111f; --navy:#0b1728; --white:#fff; --muted:#d7dde8; --gray:#f5f6f8; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Montserrat, Arial, sans-serif; color:var(--dark); background:#fff; }
+    a { color:inherit; text-decoration:none; }
+    header { position:sticky; top:0; z-index:10; background:rgba(7,17,31,.96); color:white; box-shadow:0 5px 25px rgba(0,0,0,.2); }
+    .nav { max-width:1180px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:14px 20px; gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:900; letter-spacing:.5px; }
+    .brand img { width:58px; height:44px; object-fit:cover; border-radius:8px; }
+    .brand span { color:var(--yellow); }
+    .navlinks { display:flex; gap:18px; font-size:14px; font-weight:700; align-items:center; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:13px 18px; border-radius:999px; background:var(--yellow); color:#111; font-weight:900; box-shadow:0 10px 22px rgba(244,190,22,.28); }
+    .btn.dark { background:var(--dark); color:#fff; border:1px solid rgba(255,255,255,.18); }
+    .hero { background:linear-gradient(115deg, rgba(7,17,31,.98), rgba(7,17,31,.76)), url('assets/fachada-profissional.png') center/cover; min-height:650px; color:white; display:flex; align-items:center; }
+    .hero-inner { max-width:1180px; margin:auto; padding:90px 20px; display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center; }
+    .eyebrow { display:inline-block; color:var(--yellow); font-weight:900; letter-spacing:2px; text-transform:uppercase; margin-bottom:16px; }
+    h1 { font-size:58px; line-height:1.02; margin:0 0 20px; font-weight:900; }
+    h1 span, h2 span { color:var(--yellow); }
+    .lead { font-size:20px; line-height:1.6; color:#eef3fa; max-width:630px; margin-bottom:28px; }
+    .hero-card { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:26px; padding:22px; backdrop-filter:blur(8px); }
+    .hero-card img { width:100%; border-radius:18px; display:block; box-shadow:0 25px 50px rgba(0,0,0,.35); }
+    .badges { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:24px; }
+    .badge { background:#fff; color:#111; border-radius:16px; padding:14px; text-align:center; font-weight:800; font-size:13px; }
+    section { padding:78px 20px; }
+    .wrap { max-width:1180px; margin:auto; }
+    h2 { font-size:40px; margin:0 0 18px; line-height:1.1; }
+    .subtitle { font-size:18px; color:#596274; max-width:760px; line-height:1.6; margin:0 0 34px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .card { border:1px solid #e5e8ee; border-radius:22px; padding:26px; background:white; box-shadow:0 12px 30px rgba(7,17,31,.06); }
+    .icon { width:48px; height:48px; border-radius:14px; background:var(--yellow); display:flex; align-items:center; justify-content:center; font-size:26px; margin-bottom:16px; }
+    .card h3 { margin:0 0 10px; font-size:20px; }
+    .card p { margin:0; color:#606a7a; line-height:1.55; }
+    .dark-section { background:var(--navy); color:white; }
+    .dark-section .subtitle { color:#cbd4e2; }
+    .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; counter-reset:step; }
+    .step { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.13); border-radius:20px; padding:24px; position:relative; }
+    .step:before { counter-increment:step; content:counter(step); display:block; width:36px; height:36px; border-radius:50%; background:var(--yellow); color:#111; font-weight:900; text-align:center; line-height:36px; margin-bottom:14px; }
+    .gallery { display:grid; grid-template-columns:2fr 1fr 1fr; gap:16px; }
+    .gallery img { width:100%; height:260px; object-fit:cover; border-radius:20px; display:block; }
+    .gallery img.big { height:536px; grid-row:span 2; }
+    .info { display:grid; grid-template-columns:1fr 1fr; gap:26px; align-items:center; }
+    .info-box { background:var(--gray); border-radius:26px; padding:32px; }
+    .list { display:grid; gap:14px; margin-top:20px; }
+    .list div { display:flex; gap:12px; align-items:flex-start; font-weight:700; }
+    .list div:before { content:'✓'; background:var(--yellow); color:#111; width:24px; height:24px; flex:0 0 24px; border-radius:50%; text-align:center; line-height:24px; font-weight:900; }
+    .cta { background:linear-gradient(135deg, var(--yellow), #ffdc62); border-radius:28px; padding:42px; display:grid; grid-template-columns:1.2fr .8fr; gap:20px; align-items:center; }
+    .cta h2 { color:#111; margin:0; }
+    .cta p { color:#222; font-weight:600; line-height:1.6; }
+    footer { background:#050a13; color:#dce5f3; padding:36px 20px; }
+    footer .wrap { display:flex; justify-content:space-between; gap:30px; flex-wrap:wrap; }
+    .small { color:#8793a7; font-size:12px; margin-top:16px; line-height:1.5; }
+    @media (max-width:900px) { .hero-inner,.info,.cta { grid-template-columns:1fr; } h1{font-size:42px;} .grid,.steps { grid-template-columns:1fr 1fr;} .gallery{grid-template-columns:1fr;} .gallery img,.gallery img.big{height:260px;} .navlinks{display:none;} }
+    @media (max-width:560px) { .grid,.steps{grid-template-columns:1fr;} .badges{grid-template-columns:1fr 1fr;} h1{font-size:34px;} h2{font-size:30px;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand"><img src="assets/logo.png" alt="Logo Click Coletas"><div>CLICK <span>COLETAS</span></div></div>
+      <nav class="navlinks"><a href="#servicos">Serviços</a><a href="#estrutura">Estrutura</a><a href="#localizacao">Localização</a><a class="btn" href="https://wa.me/5561981426969" target="_blank">WhatsApp</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">Vicente Pires • Brasília/DF</span>
+          <h1>Seu ponto de <span>envio, coleta e logística</span>.</h1>
+          <p class="lead">A Click Coletas oferece apoio para recebimento, organização, armazenagem e despacho de encomendas, com estrutura preparada para pessoas físicas, vendedores e empresas de e-commerce.</p>
+          <a class="btn" href="https://wa.me/5561981426969?text=Olá,%20vim%20pelo%20site%20da%20Click%20Coletas" target="_blank">Falar no WhatsApp</a>
+          <a class="btn dark" href="#servicos" style="margin-left:10px">Ver serviços</a>
+          <div class="badges"><div class="badge">📦 Receber</div><div class="badge">🔒 Armazenar</div><div class="badge">🚚 Enviar</div><div class="badge">✅ Facilitar</div></div>
+        </div>
+        <div class="hero-card"><img src="assets/logo.png" alt="Identidade visual Click Coletas"></div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="wrap">
+        <h2>Soluções para <span>encomendas e e-commerce</span></h2>
+        <p class="subtitle">Atendimento presencial em Vicente Pires para apoiar vendedores, lojas virtuais e clientes que precisam de um local organizado para movimentação de pacotes.</p>
+        <div class="grid">
+          <div class="card"><div class="icon">📥</div><h3>Recebimento de mercadorias</h3><p>Local preparado para receber e organizar encomendas com atendimento rápido e seguro.</p></div>
+          <div class="card"><div class="icon">🏷️</div><h3>Separação e organização</h3><p>Espaço para triagem, conferência e armazenamento temporário de pacotes.</p></div>
+          <div class="card"><div class="icon">🚚</div><h3>Envio e expedição</h3><p>Apoio para despacho de encomendas e rotinas de logística para e-commerce.</p></div>
+          <div class="card"><div class="icon">🛒</div><h3>Apoio para marketplaces</h3><p>Estrutura pensada para vendedores que atuam em plataformas como Mercado Livre, Shopee, Amazon e outras.</p></div>
+          <div class="card"><div class="icon">📦</div><h3>Armazenagem</h3><p>Ambientes separados e organizados para guarda temporária de mercadorias.</p></div>
+          <div class="card"><div class="icon">⚡</div><h3>Agilidade e praticidade</h3><p>Atendimento simples, direto e focado em facilitar a rotina de quem vende online.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="estrutura">
+      <div class="wrap">
+        <h2>Estrutura organizada para <span>atender melhor</span></h2>
+        <p class="subtitle">Ambiente com recepção, salas para mercadorias, área de apoio, banheiro e acesso em Vicente Pires.</p>
+        <div class="gallery">
+          <img class="big" src="assets/fachada-limpa.png" alt="Fachada Click Coletas">
+          <img src="assets/recepcao.png" alt="Recepção Click Coletas">
+          <img src="assets/estoque-1.png" alt="Sala de estoque">
+          <img src="assets/estoque-2.png" alt="Sala de mercadorias">
+          <img src="assets/cafe.png" alt="Cantinho do café">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap info">
+        <div class="info-box">
+          <h2>Como funciona</h2>
+          <div class="list">
+            <div>Você entra em contato pelo WhatsApp.</div>
+            <div>Informamos a melhor forma de recebimento ou envio.</div>
+            <div>Organizamos a mercadoria no espaço adequado.</div>
+            <div>Realizamos o apoio logístico conforme a necessidade.</div>
+          </div>
+          <p class="small">Observação: a Click Coletas é uma empresa independente. Eventuais operações com plataformas de marketplace dependem de cadastro, aprovação e regras de cada plataforma.</p>
+        </div>
+        <img src="assets/acesso.png" alt="Acesso à Click Coletas" style="width:100%; border-radius:26px; box-shadow:0 18px 45px rgba(0,0,0,.15);">
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="wrap">
+        <h2>Por que escolher a <span>Click Coletas?</span></h2>
+        <div class="steps">
+          <div class="step"><h3>Localização</h3><p>Atendimento em Vicente Pires, Brasília/DF.</p></div>
+          <div class="step"><h3>Organização</h3><p>Ambientes preparados para separar e armazenar encomendas.</p></div>
+          <div class="step"><h3>Segurança</h3><p>Processo cuidadoso no recebimento e guarda temporária.</p></div>
+          <div class="step"><h3>Agilidade</h3><p>Contato direto por WhatsApp e atendimento presencial.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao">
+      <div class="wrap cta">
+        <div>
+          <h2>Precisa de apoio para suas encomendas?</h2>
+          <p>Fale com a Click Coletas e organize sua rotina de recebimento, armazenagem e envio de mercadorias.</p>
+        </div>
+        <div>
+          <a class="btn dark" href="https://wa.me/5561981426969?text=Olá,%20quero%20informações%20sobre%20a%20Click%20Coletas" target="_blank">Chamar no WhatsApp</a>
+          <p style="margin-top:18px"><strong>Telefone:</strong> (61) 98142-6969<br><strong>E-mail:</strong> agenciavicentepires@gmail.com<br><strong>Endereço:</strong> Quadra 6 Conjunto 23 Casa 116B, Vicente Pires, Brasília/DF</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong>CLICK COLETAS</strong><br>Soluções em entregas e logística</div>
+      <div>Segunda a sexta: 08h às 19h<br>Sábado: consulte disponibilidade</div>
+      <div><a href="https://wa.me/5561981426969" target="_blank">WhatsApp: (61) 98142-6969</a></div>
+    </div>
+  </footer>
+</body>
+</html>
